@@ -12,7 +12,7 @@ Edit config.yml to reflect the folling
  * `message` to send when changes are detected
  * `log` - log results as polling occurs)
  * `interval` - interval to poll for changes
- * array of people `phone` numbers and respective `carrier` to alert
+ * array of people `phone` numbers and respective `carrier` to alert. ([carrier values](https://github.com/brendanlim/sms-fu/blob/master/templates/sms_fu.yml))
 
 Running
 =======
