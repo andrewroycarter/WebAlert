@@ -1,0 +1,20 @@
+---
+gmail:
+  address: gmailaddress@gmail.com
+  password: password
+
+website: http://www.google.com
+
+message: Website changed!
+
+log: true
+
+interval: 30
+
+people:
+  -
+    phone: 5555555555
+    carrier: at&t
+  -
+    phone: 5555555555
+    carrier: verizon
