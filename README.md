@@ -6,7 +6,7 @@ A ruby script that checks for changes on a given website, and sends sms alerts v
 Configuration
 =============
 
-Edit config.yml to reflect the folling
+Edit config.yml to reflect the following
  * gmail `address` and `password`
  * `website` to poll for changes
  * `message` to send when changes are detected
