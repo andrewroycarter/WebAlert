@@ -34,8 +34,19 @@ def send_sms
 end
 
 def check_website
-  webpage = open(@config['website']).read
-  webpage_digest = Digest::MD5.hexdigest(webpage)
+  webpage = nil
+  webpage_digest = nil
+
+  begin
+    webpage = open(@config['website']).read
+    webpage_digest = Digest::MD5.hexdigest(webpage)
+  rescue
+      if @config['log']
+        puts 'Error occured while opening webpage. Trying again.'
+      end
+      sleep(@config['interval'])
+      check_website
+  end 
 
   if @config['log']
     puts "Digest: #{webpage_digest}"
